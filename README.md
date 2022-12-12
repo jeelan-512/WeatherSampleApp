@@ -19,7 +19,8 @@ Navigation allows you to attach data to a navigation operation by defining argum
 Used weather api [Open Weather Map API](https://openweathermap.org/api) for collecting weather information.
 
 ### Project Setup
-Clone the project and open it using Android Studio then select "develop" branch to view this code [https://github.com/jeelan-512/WeatherSampleApp.git].
+Clone the project and open it using Android Studio [https://github.com/jeelan-512/WeatherSampleApp.git].
+Select "develop" branch to view this code.
 
 ### Screen Shots
 
