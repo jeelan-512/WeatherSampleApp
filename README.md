@@ -23,6 +23,6 @@ Clone the project and open it using Android Studio then select "develop" branch 
 
 ### Screen Shots
 
-<img src="https://user-images.githubusercontent.com/31059243/206970070-f9e33bba-3625-43da-adc6-098f3d33ee78.png" width="250" height="440" />
+<img src="https://user-images.githubusercontent.com/31059243/206970070-f9e33bba-3625-43da-adc6-098f3d33ee78.png" width="250" height="446" />
 
-<img src="https://user-images.githubusercontent.com/31059243/206970166-02453a73-06ea-4afc-bc3f-be1f7e90df6f.png" width="250" height="440" />
+<img src="https://user-images.githubusercontent.com/31059243/206970166-02453a73-06ea-4afc-bc3f-be1f7e90df6f.png" width="250" height="446" />
