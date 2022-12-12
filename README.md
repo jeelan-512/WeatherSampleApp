@@ -20,3 +20,9 @@ Used weather api [Open Weather Map API](https://openweathermap.org/api) for coll
 
 ### Project Setup
 Clone the project and open it using Android Studio then select "develop" branch to view this code [https://github.com/jeelan-512/WeatherSampleApp.git].
+
+### Screen Shots
+
+![Screenshot_1670823562](https://user-images.githubusercontent.com/31059243/206970070-f9e33bba-3625-43da-adc6-098f3d33ee78.png)
+
+![Screenshot_1670823579](https://user-images.githubusercontent.com/31059243/206970166-02453a73-06ea-4afc-bc3f-be1f7e90df6f.png)
