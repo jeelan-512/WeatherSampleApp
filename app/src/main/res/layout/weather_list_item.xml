@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/title_margin"
+    app:cardBackgroundColor="@color/white"
+    android:elevation="@dimen/title_margin">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/title_margin">
+
+        <ImageView
+            android:id="@+id/weatherImage"
+            android:layout_width="@dimen/image_size"
+            android:layout_height="@dimen/image_size"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/weather_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/weatherCityName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/weatherCityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/title_margin"
+            android:maxLines="1"
+            android:text="City Name"
+            android:textColor="?android:attr/colorPrimary"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_constraintStart_toEndOf="@id/weatherImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/weatherStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/title_margin"
+            android:maxLines="1"
+            android:text="@string/temperature"
+            android:textColor="?android:attr/colorPrimaryDark"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_constraintStart_toEndOf="@id/weatherImage"
+            app:layout_constraintTop_toBottomOf="@id/weatherCityName" />
+
+        <TextView
+            android:id="@+id/weatherDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/title_margin"
+            android:maxLines="1"
+            android:text="Date"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            app:layout_constraintStart_toEndOf="@id/weatherImage"
+            app:layout_constraintTop_toBottomOf="@id/weatherStatus" />
+
+        <TextView
+            android:id="@+id/weatherRange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/title_margin"
+            android:maxLines="1"
+            android:text="@string/temp_details"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            app:layout_constraintStart_toEndOf="@id/weatherImage"
+            app:layout_constraintTop_toBottomOf="@id/weatherDate" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="fragment_margin">16dp</dimen>
+    <dimen name="image_size">60dp</dimen>
+    <dimen name="title_margin">10dp</dimen>
+    <dimen name="date_margin">30dp</dimen>
+    <dimen name="image_size_large">100dp</dimen>
+</resources>

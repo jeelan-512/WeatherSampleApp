@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/weatherListFragment">
+
+    <fragment
+        android:id="@+id/weatherListFragment"
+        android:name="com.aib.assessment.feature.view.WeatherListFragment"
+        android:label="@string/weather_fragment_label"
+        tools:layout="@layout/fragment_weather_list">
+        <action
+            android:id="@+id/action_weatherListFragment_to_weatherDetailsBottomSheetFragment"
+            app:destination="@id/weatherDetailsBottomSheetFragment" />
+        <argument
+            android:name="cityName"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="date"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="temperature"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="humidity"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="pressure"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="tempMinMax"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="imageURL"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <dialog
+        android:id="@+id/weatherDetailsBottomSheetFragment"
+        android:name="com.aib.assessment.feature.view.WeatherDetailsBottomSheetFragment"
+        android:label="WeatherDetailsBottomSheetFragment" />
+
+
+</navigation>

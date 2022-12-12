@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:contentPadding="@dimen/fragment_margin">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/weatherImage"
+                android:layout_width="@dimen/image_size_large"
+                android:layout_height="@dimen/image_size_large"
+                android:contentDescription="@string/weather_image"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/weatherDetailsTemperature"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/weatherDetailsCityName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/title_margin"
+                android:maxLines="1"
+                android:text="City Name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="?android:attr/colorPrimaryDark"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/weatherDetailsDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/title_margin"
+                android:layout_marginTop="@dimen/date_margin"
+                android:maxLines="1"
+                android:text="Date"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="?android:attr/colorPrimaryDark"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/weatherDetailsCityName" />
+
+            <TextView
+                android:id="@+id/weatherDetailsTemperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/title_margin"
+                android:layout_marginTop="@dimen/fragment_margin"
+                android:maxLines="1"
+                android:text="@string/temp_details_large"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+                android:textColor="?android:attr/colorPrimary"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/weatherDetailsDate" />
+
+            <TextView
+                android:id="@+id/weatherDetailsHumidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/title_margin"
+                android:layout_marginTop="@dimen/fragment_margin"
+                android:maxLines="1"
+                android:text="@string/humidity"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/weatherDetailsTemperature" />
+
+            <TextView
+                android:id="@+id/weatherDetailsPressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/title_margin"
+                android:layout_marginTop="@dimen/fragment_margin"
+                android:maxLines="1"
+                android:text="@string/pressure"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/weatherDetailsHumidity" />
+
+            <TextView
+                android:id="@+id/weatherDetailsTempMin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/title_margin"
+                android:layout_marginTop="@dimen/fragment_margin"
+                android:maxLines="1"
+                android:text="@string/temperature_min"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/weatherDetailsPressure" />
+
+            <TextView
+                android:id="@+id/weatherDetailsTempMax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/title_margin"
+                android:layout_marginTop="@dimen/fragment_margin"
+                android:maxLines="1"
+                android:text="@string/temperature_max"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/weatherDetailsTempMin" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</com.google.android.material.card.MaterialCardView>
